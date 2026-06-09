@@ -1,5 +1,5 @@
-FROM   akshpawardocker/tomcat:10.0.0
+FROM   tomcat:10.1
 LABEL maintainer="Vinit"
 COPY ./build /usr/local/tomcat/webapps/
-EXPOSE 8000
+EXPOSE 8080
 CMD ["catalina.sh", "run"]
